@@ -27,3 +27,7 @@ However, there are still some challenging problems in the dataset images
 
 ## The Food Ingredient Model  
 ### The YoloV3-SRN hybrid Network  
+![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/图片1.png)  
+ 
+###### Just like the picture below, Here I use YOLOv3 as the main detection Networks. And I also add a spatial regularization network to connect to the main network. Next I will call it SRN.   
+  <br>The SRN can learn attention maps for each label. The attention masp focus on small activation regions for each category, which associates the related image regions to each labels. The confidence map, what we get from 1 by 1 convolution, consists of many distinctive parameters corresponding to each region. These parameters can re-weight the attention map after we do element-wise multiplication operation with these two maps . After doing that, our model will more focus on the part that the attention maps appears, and find more detail and tiny feature, finally get better performance. It just like we do regularization operation in the images’ spatial domain, that is the reason why it called spatial regularization Network.</br>
