@@ -1,4 +1,4 @@
-Pi2Cook- An smart Android Application with food ingredient recognition and dish recommendation.
+# Pi2Cook- An smart Android Application with food ingredient recognition and dish recommendation.
 
 ![](https://img.shields.io/badge/license-MIT-blue) 
 ![](https://img.shields.io/badge/Android-7.0%2B-blue)
