@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/deep_gray_rounds"
+            android:alpha="0.6"
+            android:id="@+id/alertv1"/>
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/alertv1"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="Pic2Cook企图访问您手机的摄像头"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="48dp"
+            android:text=" 是否允许Pic2Cook使用并访问本机的摄像与相册功能？"
+            android:textColor="@color/bg_black_light"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/alertv1"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <TextView
+            android:id="@+id/camera_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="确认"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/alertv1"
+            app:layout_constraintEnd_toEndOf="@+id/alertv1" />
+
+        <TextView
+            android:id="@+id/camera_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginBottom="16dp"
+            android:text="取消"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/alertv1"
+            app:layout_constraintStart_toStartOf="@+id/alertv1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

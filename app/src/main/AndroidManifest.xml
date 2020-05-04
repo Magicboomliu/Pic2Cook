@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pic2cook_develop">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读取SD卡的权限:打开相册选取图片所必须的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> <!-- &lt;!&ndash;连接网络权限，用于执行云端语音能力 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- &lt;!&ndash;获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <!-- &lt;!&ndash;读取网络信息状态 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- &lt;!&ndash;获取当前wifi状态 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- &lt;!&ndash;允许程序改变网络连接状态 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> -->
+    <!-- &lt;!&ndash;读取手机信息权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- &lt;!&ndash;读取联系人权限，上传联系人需要用到此权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!-- &lt;!&ndash;外存储写权限，构建语法需要用到此权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- &lt;!&ndash;外存储读权限，构建语法需要用到此权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <!-- &lt;!&ndash;配置权限，用来记录应用配置信息 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" -->
+    <!-- tools:ignore="ProtectedPermissions" /> -->
+    <!-- &lt;!&ndash;手机定位信息，用来为语义等功能提供定位，提供更精准的服务&ndash;&gt; &lt;!&ndash;定位信息是敏感信息，可通过Setting.setLocationEnable(false)关闭定位请求 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 配置权限，用来记录应用配置信息 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 手机定位信息，用来为语义等功能提供定位，提供更精准的服务 -->
+    <!-- 定位信息是敏感信息，可通过Setting.setLocationEnable(false)关闭定位请求 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pic2cook_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="cooks.show_more_details_activitys_from_search"></activity>
+        <activity
+            android:name="cooks.paizhao_activity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Detailed_ingredients"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Virus_protection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".infoga.infos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.wechat_moon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.Wechat_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guidepage.guide_page_container"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcums" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="cooks.paizhao_activity.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- name属性值固定，authorities属性值必须和FileProvider.getUriForFile()方法中的第二个参数一致 -->
+            <!-- 使用<meta-data>来指定Uri的共享路径 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

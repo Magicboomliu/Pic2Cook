@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black_light"
+    tools:context=".Virus_protection">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/back_virvus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="疫情期间宅家攻略"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:id="@+id/virvus_share"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="33dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/u3423"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3000dp"
+            android:src="@drawable/vv"
+            android:scaleType="fitXY"/>
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/bg_black_light"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过"
+        android:id="@+id/skip_info_3"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="3/3  下面哪种食物更加符合你的烹饪习惯？"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/y_infog3">
+
+        <View
+            android:layout_marginTop="25dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/low_cate_selected"/>
+
+        <View
+            android:layout_marginTop="25dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/low_cate_selected"
+            android:background="@color/colorPrimary"
+            android:id="@+id/family_hold"/>
+        <View
+            android:layout_marginTop="45dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/low_cate_selected"
+            android:background="@color/colorPrimary"
+            android:id="@+id/rich_dish"/>
+        <View
+            android:layout_marginTop="45dp"
+            android:layout_width="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/low_cate_selected"
+            android:layout_toRightOf="@id/rich_dish"
+            android:layout_height="160dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/instant"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/low_cate_selected"
+            android:src="@drawable/low_calo"
+            android:id="@+id/low_cate_image"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignLeft="@id/family_hold"
+            android:layout_alignTop="@id/low_cate_selected"
+            android:src="@drawable/tomegg"
+            android:id="@+id/family_hold_image"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/rich_dish"
+            android:src="@drawable/fo"
+            android:id="@+id/rich_dish_image"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/rich_dish"
+            android:layout_alignLeft="@id/instant"
+            android:src="@drawable/low_calo"
+            android:id="@+id/instant_dish"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/low_cate_selected"
+            android:text="低卡路里食物"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/low_cate_selected"
+            android:text="家常菜"
+            android:textColor="@color/white"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rich_dish"
+            android:text="挑战性的，新奇菜品"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instant"
+            android:text="快速速成菜品"
+            android:textColor="@color/white"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/gather_info_finished"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stroke_white"
+                android:text="初始化完成"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/info_hater_01"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/white_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <View
+            android:id="@+id/info_hater_02"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/info_hater_01"
+            android:background="@drawable/white_circle"
+            app:layout_constraintStart_toEndOf="@+id/info_hater_03"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <View
+            android:id="@+id/info_hater_03"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/info_hater_02"
+            android:background="@drawable/circle_orange"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray_dark"
+        android:layout_height="90dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_light_round_bg"
+            android:alpha="0.9"
+            android:id="@+id/alertv1"/>
+        <TextView
+            android:layout_alignTop="@id/alertv1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已经添加到我的收藏"
+            android:textColor="@color/gray_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

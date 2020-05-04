@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/guiding_page03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/gp3"
+        />
+
+    <Button
+        android:id="@+id/from_guide_to_login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="565dp"
+        android:background="@drawable/stroke_btn01"
+        android:text="立刻体验"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+
+        android:textStyle="bold" />
+
+</RelativeLayout>

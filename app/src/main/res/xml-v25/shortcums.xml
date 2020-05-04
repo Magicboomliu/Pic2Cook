@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="background_settings"
+        android:enabled="true"
+        android:icon="@mipmap/cccccccccc"
+        android:shortcutShortLabel="@string/shortcuts_back_short_label"
+        android:shortcutLongLabel="@string/shortcuts_back_long_label"
+        android:shortcutDisabledMessage="@string/shortcuts_back_disable_msg">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="cooks"
+            android:targetClass="cooks.paizhao_activity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="pip_settings"
+        android:enabled="true"
+        android:icon="@mipmap/huihixx"
+        android:shortcutShortLabel="@string/shortcuts_pip_short_label"
+        android:shortcutLongLabel="@string/shortcuts_pip_long_label"
+        android:shortcutDisabledMessage="@string/shortcuts_pip_disable_msg">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.pic2cook_develop"
+            android:targetClass="com.example.pic2cook_develop.MainActivity" />
+    </shortcut>
+
+</shortcuts>

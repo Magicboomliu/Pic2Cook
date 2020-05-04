@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/grils"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="“厨力”"
+        android:textColor="@color/bg_black_dark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="大PK"
+        android:textColor="@color/bg_black_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Rules introduction"
+        android:textStyle="italic"
+        android:textColor="@color/bg_black_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        android:background="@color/bg_black_dark"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“厨力值”是衡量用户在Pic2Cook中的用户能力指数。由月活跃度，交互行为，点赞与收藏数目，上传菜品与食材介绍数目共同确定。"
+            android:textColor="@color/white"/>
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:padding="10dp"
+             android:layout_height="180dp">
+
+             <View
+                 android:id="@+id/view7"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:alpha="0.7"
+                 android:background="@color/bg_black_light"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="5dp"
+                 android:text="1.月活跃程度基础分 50 分，根据程度上涨。"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 app:layout_constraintStart_toStartOf="@+id/view7"
+                 app:layout_constraintTop_toTopOf="@+id/view7" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="35dp"
+                 android:text="2. 每上传一套菜谱，获得“厨力” 5 分。"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 app:layout_constraintStart_toStartOf="@+id/view7"
+                 app:layout_constraintTop_toTopOf="@+id/view7" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="65dp"
+                 android:text="3.每分享一道烹饪动态，获得“厨力” 3 分。"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 app:layout_constraintStart_toStartOf="@+id/view7"
+                 app:layout_constraintTop_toTopOf="@+id/view7" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="95dp"
+                 android:text="4.每收获一个“赞”与评论，获得“厨力” 2 分"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 app:layout_constraintStart_toStartOf="@+id/view7"
+                 app:layout_constraintTop_toTopOf="@+id/view7" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<Button
+    android:id="@+id/understand_the_rule"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_black_light"
+    android:alpha="0.9"
+    android:text="了解"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="20sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

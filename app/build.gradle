@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+// Mob SDK share
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.pic2cook_develop"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jni {
+                srcDirs 'src/main/jni', 'src/main/jniLibs/'
+            }
+        }
+    }
+
+}
+MobSDK {
+    appKey "2e9a7216e71e5"
+    appSecret "58704107538473b64424b762d94d6af1"
+    ShareSDK {
+        devInfo {
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+                shareByAppClient true
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient true
+            }
+            QZone {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+                shareByAppClient true
+                bypassApproval false
+                enable true
+            }
+            LinkedIn {
+                appKey "ejo5ibkye3vo"
+                appSecret "cC7B2jpxITqPLZ5M"
+                callbackUri "http://sharesdk.cn"
+                shareByAppClient true
+                enable true
+            }
+            Twitter {
+                appKey "viOnkeLpHBKs6KXV7MPpeGyzE"
+                appSecret "NJEglQUy2rqZ9Io9FcAU9p17omFqbORknUpRrCDOK46aAbIiey"
+                callbackUri "http://mob.com"
+                shareByAppClient true
+                enable true
+            }
+            Douban {
+                appKey "031a96a3aa8b28af094fc3eaffa17a0d"
+                appSecret "2e675e730571b75d"
+                callbackUri "http://mob.com"
+                enable true
+            }
+            Instagram {
+                appId "ff68e3216b4f4f989121aa1c2962d058"
+                appSecret "1b2e82f110264869b3505c3fe34e31a1"
+                callbackUri "http://sharesdk.cn"
+                enable true
+            }
+
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    //noinspection GradleCompatible
+    implementation 'top.zibin:Luban:1.1.8'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:25.3.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7'
+    implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //noinspection GradleCompatible
+
+
+}

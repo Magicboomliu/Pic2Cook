@@ -1,0 +1,2 @@
+rootProject.name='Pic2Cook_develop'
+include ':app'

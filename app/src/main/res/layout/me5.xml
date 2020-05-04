@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_black_dark"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/previous_me5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/previous"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的购物清单"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/checjlist_icon"
+        android:id="@+id/cheklist_iconss"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待处理的购物订单"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cheklist_iconss"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="2020年4月1日"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cheklist_iconss"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/bg_black_light">
+
+        <com.example.pic2cook_develop.RoundImageView
+            android:id="@+id/roundImageView7"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tom_egg_my_saves"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:type="round" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="45dp"
+            android:text="西红柿炒番茄"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/roundImageView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.pic2cook_develop.RoundImageView
+            android:id="@+id/roundImageView8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ra2"
+            app:layout_constraintStart_toEndOf="@+id/roundImageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView42"
+            app:type="circle" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="老番茄"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/roundImageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <ImageView
+            android:id="@+id/see_detailed_checklist"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/his_trcl"
+            android:id="@+id/barbra"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待处理的购物订单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/barbra"
+            android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_black_light"
+        android:text="暂时无"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

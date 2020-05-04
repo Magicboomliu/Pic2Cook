@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sorted_scores"
+            android:icon="@drawable/scores"
+            android:title="按照PIC2评分排序"
+            />
+        <item
+            android:id="@+id/sorted_time"
+            android:icon="@drawable/time_sort"
+            android:title="按照耗费的时间排序"
+            />
+        <item
+            android:id="@+id/saveds_sort"
+            android:icon="@drawable/people_amount"
+            android:title="按照点赞人数排序"
+            />
+        <item
+            android:id="@+id/diff_sort"
+            android:icon="@drawable/diffcult_sorted"
+            android:title="按照难易程度排序"
+            />
+        <item
+            android:id="@+id/com_sort"
+            android:icon="@drawable/complete_sort"
+            android:title="按照食材是否齐全排序"
+            />
+        <item
+            android:id="@+id/cal_sort"
+            android:icon="@drawable/caloriesssssssssssssssssssssssss"
+            android:title="按照卡路里排序"
+            />
+
+
+
+    </group>
+
+</menu>

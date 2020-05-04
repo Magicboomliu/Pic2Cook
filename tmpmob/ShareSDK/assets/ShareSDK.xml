@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="568898243" AppSecret="38a4f8204cc784f81f9f0daaf31e02e3" ShareByAppClient="true" RedirectUrl="http://www.sharesdk.cn" />
+<TencentWeibo Enable="false" />
+<Douban Enable="true" ApiKey="031a96a3aa8b28af094fc3eaffa17a0d" Secret="2e675e730571b75d" RedirectUri="http://mob.com" />
+<QZone AppId="100371282" AppKey="aed9b0303e3ed1e27bae87c33761161d" ShareByAppClient="true" BypassApproval="false" Enable="true" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook ConsumerKey="1412473428822331" ConsumerSecret="a42f4f3f867dc947b9ed6020c2e93558" RedirectUrl="https://mob.com" />
+<Twitter ShareByAppClient="true" Enable="true" ConsumerKey="viOnkeLpHBKs6KXV7MPpeGyzE" ConsumerSecret="NJEglQUy2rqZ9Io9FcAU9p17omFqbORknUpRrCDOK46aAbIiey" CallbackUrl="http://mob.com" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram Enable="true" ClientId="ff68e3216b4f4f989121aa1c2962d058" ClientSecret="1b2e82f110264869b3505c3fe34e31a1" RedirectUri="http://sharesdk.cn" />
+<LinkedIn ShareByAppClient="true" Enable="true" ApiKey="ejo5ibkye3vo" SecretKey="cC7B2jpxITqPLZ5M" RedirectUrl="http://sharesdk.cn" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat AppId="wx4868b35061f87885" AppSecret="64020361b8ec4c99936c0e3999a9f249" />
+<WechatMoments Enable="false" />
+<QQ AppId="100371282" AppKey="aed9b0303e3ed1e27bae87c33761161d" ShareByAppClient="true" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Enable="false" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin Enable="false" />
+<Wework Enable="false" />
+<HWAccount Enable="false" />
+<Oasis Enable="false" />
+<XMAccount Enable="false" />
+<SnapChat Enable="false" />
+</DevInfor>

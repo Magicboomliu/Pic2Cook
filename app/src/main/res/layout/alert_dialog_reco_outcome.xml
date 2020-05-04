@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray_dark"
+        android:layout_height="120dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_light_round_bg"
+            android:alpha="0.9"
+            android:id="@+id/alertv1"/>
+        <TextView
+            android:layout_alignTop="@id/alertv1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dodemoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我们识别到了"
+            android:textColor="@color/gray_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/reco_contentS_of_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dodemoi"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="XXXXXX"
+            android:gravity="center_horizontal"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--   App内部的主要颜色   -->
+    <color name="bg_black_dark">#111111</color>
+    <color name="bg_black_light">#262626</color>
+
+    <color name="orange">#FFCC66</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#62C68D</color>
+    <color name="blue">#4C90E2</color>
+    <color name="light_blue">#6699FF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="gray_normal">#999999</color>
+    <color name="gray_dark">#666666</color>
+
+    <!--   App 某些特殊部位的颜色   -->
+    <color name="icon_gray">#E6E6E6</color>
+    <color name="search_blog">#2B2B2B</color>
+    <color name="hint_text_color_gray">#666666</color>
+
+    <color name="top_memu_selected">#E0E0E0</color>
+
+</resources>

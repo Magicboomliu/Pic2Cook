@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pic2Cook</string>
+    <string name="shortcuts_back_short_label">拍照识别菜品</string>
+    <string name="shortcuts_back_long_label">拍照识别菜品</string>
+    <string name="shortcuts_back_disable_msg">拍照识别菜品</string>
+
+    <string name="shortcuts_pip_short_label">Home Page</string>
+    <string name="shortcuts_pip_long_label">Home Page</string>
+    <string name="shortcuts_pip_disable_msg">Home Page</string>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_black_dark"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <com.example.pic2cook_develop.RoundImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/azumio"
+            android:layout_gravity="center_horizontal"
+            app:type="circle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pic2Cook, Share your cooks"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@color/light_blue"
+            app:layout_constraintStart_toStartOf="@+id/view11"
+            app:layout_constraintTop_toTopOf="@+id/view11" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_blue"
+            app:layout_constraintEnd_toEndOf="@+id/view11"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/light_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintEnd_toEndOf="@+id/view11" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/camera_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="@+id/view12" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#FFFFAA"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintTop_toTopOf="@+id/view13" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFAA"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:background="#FFFFAA"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="100dp"
+            android:background="#FFFFAA"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/camera_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/new_dish_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:text="创建菜谱"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/view11"
+            app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+        <TextView
+            android:id="@+id/Upload_the_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:text="上传作品"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

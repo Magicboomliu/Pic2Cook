@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray_dark"
+        android:layout_height="180dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_light_round_bg"
+        android:alpha="0.9"
+        android:id="@+id/alertv1"/>
+    <TextView
+        android:layout_alignTop="@id/alertv1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/alert_dialogues_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pic2Cook已经为您开启每日提醒"
+        android:textColor="@color/gray_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/set_clock"
+            android:layout_below="@id/alert_dialogues_tittle"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:text="  Pic2Cook已经将提醒设置为每天早上的8点钟
+用早餐唤醒你的美好一天"
+            android:textColor="@color/gray_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/cancel_clock"
+            android:layout_below="@id/set_clock"
+            android:text="取消"
+            android:layout_marginLeft="80dp"
+            android:layout_alignLeft="@id/set_clock"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/set_clock"
+            android:text="确定"
+            android:id="@+id/confrim_clock"
+            android:layout_toRightOf="@id/cancel_clock"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

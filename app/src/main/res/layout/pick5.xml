@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="160dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/steps1"
+            android:src="@drawable/step5"
+            android:scaleType="fitXY"
+            />
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/white_circle"
+            android:layout_below="@id/steps1"
+            android:id="@+id/co1"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/white_circle"
+            android:layout_below="@id/steps1"
+            android:layout_toRightOf="@+id/co1"
+            android:id="@+id/co2"
+            android:layout_marginLeft="12dp"/>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/white_circle"
+            android:layout_below="@id/steps1"
+            android:layout_toRightOf="@+id/co2"
+            android:id="@+id/co3"
+            android:layout_marginLeft="12dp"/>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/white_circle"
+            android:layout_below="@id/steps1"
+            android:layout_toRightOf="@+id/co3"
+            android:id="@+id/co4"
+            android:layout_marginLeft="12dp"/>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/circle_orange"
+            android:layout_toRightOf="@+id/co4"
+            android:id="@+id/co5"
+            android:layout_below="@id/steps1"
+            android:layout_marginLeft="12dp"/>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/white_circle"
+            android:layout_toRightOf="@+id/co5"
+            android:id="@+id/co6"
+            android:layout_below="@id/steps1"
+            android:layout_marginLeft="12dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

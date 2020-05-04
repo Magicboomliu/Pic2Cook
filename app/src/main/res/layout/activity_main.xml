@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+     android:background="@color/bg_black_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/FL_C"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_navgate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_black_light"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/cook_contents"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/under_cook_normal" />
+
+        <TextView
+            android:id="@+id/cook_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cook_contents"
+            android:text="下厨"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/save_contents"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/cook_contents"
+            android:scaleType="centerCrop"
+            android:src="@drawable/under_saved_checked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_contents"
+            android:layout_alignLeft="@id/save_contents"
+            android:layout_marginLeft="3dp"
+            android:text="收藏"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/market_contents"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/save_contents"
+            android:scaleType="centerCrop"
+            android:src="@drawable/under_market_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_contents"
+            android:layout_alignLeft="@id/market_contents"
+            android:layout_marginLeft="3dp"
+            android:text="市场"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/my_contents"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/market_contents"
+            android:scaleType="centerCrop"
+            android:src="@drawable/under_me_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_contents"
+            android:layout_alignLeft="@id/my_contents"
+            android:layout_marginLeft="3dp"
+            android:text="我的"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/about_contents"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/my_contents"
+            android:scaleType="centerCrop"
+            android:src="@drawable/under_about_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_contents"
+            android:layout_alignLeft="@id/about_contents"
+            android:layout_marginLeft="3dp"
+            android:text="关于"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

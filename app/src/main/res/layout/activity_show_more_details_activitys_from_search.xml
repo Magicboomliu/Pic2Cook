@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cooks.show_more_details_activitys_from_search">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <WebView
+           android:id="@+id/webview01"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:id="@+id/sdsasadsada"
+               android:background="@color/light_blue"
+               android:text="PiC2Cook  为您推荐~~"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_below="@id/sdsasadsada">
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:id="@+id/shareeeee"
+                   android:textColor="@color/white"
+                   android:text="分享"
+                   android:textStyle="bold"
+                   android:background="@color/colorPrimary"/>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/addddddd"
+                   android:text="添加到购物清单"
+                   android:textColor="@color/white"
+                   android:layout_weight="1"
+                   android:background="@color/gray_dark"/>
+
+
+
+           </LinearLayout>
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

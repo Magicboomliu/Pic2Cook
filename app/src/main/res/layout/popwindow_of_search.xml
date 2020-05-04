@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bg_black_light"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="最近的搜索记录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/delete_somtething"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/delete_search_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:text="清除历史"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:background="#333333"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <Button
+            android:id="@+id/suantan_chaorou_search_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/search_ss"
+            android:text="蒜薹炒肉"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/potato_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search_ss"
+            android:text="土豆"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前热门 in Pic2Cook"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fires"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fires"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fires"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:padding="10dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/suantan_dantai_search_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_ss"
+            android:text="蛋挞"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/suantan_dangao_search_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/search_ss"
+            android:text="蛋糕"
+            android:textColor="@color/gray_light"
+            android:textSize="13dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/suantan_hongshaorou_search_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/search_ss"
+            android:text="红烧肉"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/suantan_pisa_search_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/search_ss"
+            android:text="披萨"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/qiezi_dantai_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search_ss"
+                android:text="茄子"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/tudouu_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="土豆"
+                android:textColor="@color/gray_light"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/jixiongrou_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="鸡胸肉"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/shousi_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="寿司"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/baozi_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search_ss"
+                android:text="包子"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/shrimp_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="虾"
+                android:textColor="@color/gray_light"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/shouzhuabing_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="手抓饼"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/paigu_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="排骨"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/zaocan_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search_ss"
+                android:text="早餐"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/doufu_search_id"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="豆腐"
+                android:textColor="@color/gray_light"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/大闸蟹_search_id"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_ss"
+                android:text="大闸蟹怎么做"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/bg_black_dark"
+    tools:context="cooks.paizhao_activity">
+
+    <ImageView
+        android:id="@+id/show_the_image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/shibie_outcome"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:hint="这里显示识别的结果"
+        android:background="@null"
+        android:textColorHint="@color/gray_light"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/shibie_outcom_lanuch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bg_black_dark"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        android:text="显示识别的结果"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_black_light"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <EditText
+            android:id="@+id/complement_dishes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="没有我想要的结果？在这里添加,添加的就结果用逗号隔开（如牛肉，鸡蛋）"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_light"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sppec"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/speech_recoss"
+            app:layout_constraintBottom_toBottomOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="@+id/view14" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="65dp"
+            android:gravity="center_horizontal"
+            android:text="点击此按钮可以进行语音输入"
+            android:textColor="@color/gray_light"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view14"
+            app:layout_constraintStart_toEndOf="@+id/sppec" />
+
+        <Button
+            android:id="@+id/generated_dishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:text="Pic2Cook 一键菜谱生成"
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
