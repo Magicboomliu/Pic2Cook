@@ -10,3 +10,7 @@ This is the grauation project of my Bachlor degree of Enginnering in South China
 
 ## Background and introducation  
 The reason why I conducted this research is that during the special period like now when everyone stay at home, It was a very troublesome to decide what to cook at home everyday for everyone, and It is not very convenient to buy vegetables outside. So this application with food ingredient recognition and dishes recommend functions can allow user to decide what to cook with the ingredient have already have at home very quickly and convenient.
+
+![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/hahahaha.png)
+
+The picture below is the logic structure of the application, it can both used in the supermarket or at home. First , users take pictures and do ingredient recognition, in the mean time, user can make speech input for supplement and preference settings. Finally, the recommendation system will give recipe recommendation based on both the recognition result and the information that the user provided.
