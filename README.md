@@ -52,7 +52,21 @@ Then I encode all the user information, such as age, gender, preference into a h
 
 -------------------------------------------------------------------------------------------------------------------------------
 ## Experiments and Results
+
 The figure below shows the evaluation result of the food ingredient recignition and dish recommendation systems
 ![iMAGE](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/androidsss.png) ![iMAGE](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/Picture2.png)
+
+This is the experiments results of the recognition model. I compared the my model with some other object detection structures ,and use mAP, F1-C and F1-O.
+ As we can see in this chart, Yolov3-with SRN achieves state of art among the five methods in the data set.
+The picture on the right is that I apply this model into an Android Phone . Through It has packages, the model can recognize the food ingredient perfectly. It shows that classifier is strong and robust.  
+The Figure also shows evaluation results of the recommend system, I use HR@15 to evaluate the recall rate. As we can see on the chart on the right, the recommend system that I proposed has the best performance compared with ItemCF and UsrCF.
+
+------------------------------------------------------------------------------------------------------------------------
+## UI designs and Completed Application
+Cool dark mode is applied in this application.  
+![iMAGE](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/finaloutput.png)
+Go to the release page to use this Pic2Cook, make your cook experiences easy and amazing!
+
+
   
   
