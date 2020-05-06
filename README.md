@@ -15,7 +15,14 @@ The reason why I conducted this research is that during the special period like 
 ![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/hahahaha.png)
 
 The picture below is the logic structure of the application, it can both used in the supermarket or at home. First , users take pictures and do ingredient recognition, in the mean time, user can make speech input for supplement and preference settings. Finally, the recommendation system will give recipe recommendation based on both the recognition result and the information that the user provided.
-### The MainFunctions of Pic2Cook  
+### The MainFunctions of Pic2Cook 
+![functions](https://github.com/Magicboomliu/Pic2Cook/blob/master/imags/pic2cookss.jpg)
+
+<br>This figure shows the main functions of the Pic2Cook. The Main functions is Food Ingredient recognition and Dishes Recommendation.There are still other functions like search function will enable user to get plenty of dishes recommendation according the text input or
+the speech input; While Weekly feedbacks can show the weekly report of the user's interactions and diet statistics.</br>  
+In addition, there is also a Chatbot which provide user a interface to have conversations with the chatbot of Pic2Cook, which will
+give user guidance on Cooking and fast jump to the detailed dishes pages.
+
 
 ### Facing Problems and Dataset Preparation
 
