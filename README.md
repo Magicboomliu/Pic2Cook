@@ -15,6 +15,7 @@ The reason why I conducted this research is that during the special period like 
 ![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/hahahaha.png)
 
 The picture below is the logic structure of the application, it can both used in the supermarket or at home. First , users take pictures and do ingredient recognition, in the mean time, user can make speech input for supplement and preference settings. Finally, the recommendation system will give recipe recommendation based on both the recognition result and the information that the user provided.
+### The MainFunctions of Pic2Cook  
 
 ### Facing Problems and Dataset Preparation
 
