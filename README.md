@@ -32,7 +32,9 @@ However, there are still some challenging problems in the dataset images
 * Coverage problems
 * package problems, 
 * overexposed problems caused by the light 
-
+### Basic Image Preprocessing for overexposed image
+![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/imagep.png)
+Image inpainting operation, use OpenCV to extract the white part, and use the inpaint function preset in opencv to fill the highlighted overexposure part of the image according to the surrounding pixels to reduce the impact of exposure on the image.
 ## The Food Ingredient Model  
 ### The YoloV3-SRN hybrid Network  
 ![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/图片1.png)  
