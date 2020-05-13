@@ -43,7 +43,6 @@ Image inpainting operation, use OpenCV to extract the white part, and use the in
   <br>The SRN can learn attention maps for each label. The attention masp focus on small activation regions for each category, which associates the related image regions to each labels. The confidence map, what we get from 1 by 1 convolution, consists of many distinctive parameters corresponding to each region. These parameters can re-weight the attention map after we do element-wise multiplication operation with these two maps . After doing that, our model will more focus on the part that the attention maps appears, and find more detail and tiny feature, finally get better performance. It just like we do regularization operation in the images’ spatial domain, that is the reason why it called spatial regularization Network.</br>
   
   ## The Dishes Recommendation Alogorithm
- ![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/Picture1.png)
   After get the food ingredients recognition result and user’s speech input, It is time to build the recommendation system.
 First I design a Web crawler to download over 2000 thousand recipes and over 500 user’s data. The users’ data including user’s following list, user’s searching history, user’s basic information and other interactive logs. Then I give each recipe scores according to user’s data and get a User-dishes data set.
 After that , first I use the User-based Collaborative filtering algorithm to get a collaborative matrix between target user and potentially similar users. 
