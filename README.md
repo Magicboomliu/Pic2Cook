@@ -43,11 +43,11 @@ Image inpainting operation, use OpenCV to extract the white part, and use the in
   <br>The SRN can learn attention maps for each label. The attention masp focus on small activation regions for each category, which associates the related image regions to each labels. The confidence map, what we get from 1 by 1 convolution, consists of many distinctive parameters corresponding to each region. These parameters can re-weight the attention map after we do element-wise multiplication operation with these two maps . After doing that, our model will more focus on the part that the attention maps appears, and find more detail and tiny feature, finally get better performance. It just like we do regularization operation in the images’ spatial domain, that is the reason why it called spatial regularization Network.</br>
   
   ## The Dishes Recommendation Alogorithm
-  After get the food ingredients recognition result and user’s speech input, It is time to build the recommendation system.
-First I design a Web crawler to download over 2000 thousand recipes and over 500 user’s data. The users’ data including user’s following list, user’s searching history, user’s basic information and other interactive logs. Then I give each recipe scores according to user’s data and get a User-dishes data set.
-After that , first I use the User-based Collaborative filtering algorithm to get a collaborative matrix between target user and potentially similar users. 
-Then I encode all the user information, such as age, gender, preference into a high-dimenson vectors, then use a Neural Networks. ,in the picture is NCF to calculate the similarity between the users, and generated a matrix too. Then I add the two matrix and train a Neural Network as a filter to find the most similarity-share group. Then we will do recommendation according to food ingredient ,the user’s speech input and similarity-share groups’ preferences. 
-
+  ![recommendation model imgae](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/Dishes_recommendation.png)
+After get the food ingredients recognition result and user’s speech input, It is time to build the recommendation algorithm.
+The figure shows the structure of my proposed recommendation algorithm.   
+  First, I designed a web crawler and download over 500 user’s interaction data from Chinese biggest food Website. The user’s data including users’ following list, user’s personalized tags and the dishes which the user saves. And using these data, I can a user preference data set which contains preference vector for each user.   
+  Then I use  User Collaborative Filtering Algorithm to compute the similarities between the users and generate a collaborative matrix.(Using Jaccard function to get the similarity) And I also make the users’ personalized tags as the input and use a semantic analysis CNN to compute the semantic similarity between users. And I fused the two results together and finally get K most similar users. Finally, we can do recommendation based on the K most similar users saving dishes together with food ingredient recognition result and the speech input result.
 ## Other Functions
 * You can see other functions in the codes, simple and clear.
 
