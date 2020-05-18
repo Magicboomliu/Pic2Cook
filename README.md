@@ -64,8 +64,9 @@ The Figure also shows evaluation results of the recommend system, I use HR@15 to
 ------------------------------------------------------------------------------------------------------------------------
 ## UI designs and Completed Application
 Cool dark mode is applied in this application.  
-![iMAGE](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/finaloutput.png)
-![Image](https://github.com/Magicboomliu/Pic2Cook/blob/master/imags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E5%BC%95%E5%AF%BC%E9%A1%B5.jpg)
+
+![image](https://github.com/Magicboomliu/Graduation_Project-SCUT-/blob/master/imags/effects.png)
+
 ### Go to the release page to use this Pic2Cook, make your cook experiences easy and amazing!
 
 
